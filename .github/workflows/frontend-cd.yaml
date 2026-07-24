@@ -1,4 +1,4 @@
-name: Frontend CD
+name: Frontend_CD
 
 on:
   push:
@@ -117,5 +117,3 @@ jobs:
       - name: Verify deployment rollout
         run: |
           kubectl rollout status deployment/frontend --timeout=180s
-
-
